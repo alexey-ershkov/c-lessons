@@ -5,10 +5,14 @@ int main() {
 
 
     printf("Enter a and b \n");
-    scanf("%d %d", &a, &b);
+    scanf("%d", &a);
+    scanf("%d", &b);
 
     if (a > b) {
+        // some code here
         printf("a is greater than b\n");
+    } else if (a == b) {
+        printf("a and b are equal\n");
     } else {
         printf("b is greater or equal a\n");
     }

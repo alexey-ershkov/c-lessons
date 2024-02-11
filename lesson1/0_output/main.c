@@ -15,5 +15,8 @@ int main() {
     printf("We will print a template string %s\n", "external");
 
     printf("pring special chareters \" \'\n");
+
+    printf("We will print a number %d and string %s\n", 3, "some string");
+
     return 0;
 }

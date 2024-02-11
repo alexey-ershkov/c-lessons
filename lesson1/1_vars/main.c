@@ -18,7 +18,6 @@ int main() {
 
     int a = 5;
     int b = 7;
-    int sum = a + b;
 
     // + оператор сложения
     // - оператор вычитания
@@ -26,7 +25,7 @@ int main() {
     // % оператор взятия остатка от деления
     // / оператор деления
 
-    printf("Sum %d\n", sum);
+    printf("Sum %d\n", a + b);
 
     printf("Pointer a=%p\nPointer b=%p\n", &a, &b);
 
