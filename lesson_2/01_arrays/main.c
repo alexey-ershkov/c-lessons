@@ -15,16 +15,16 @@ void print_array(int *array, int array_len) {
 
 int main() { 
     // int *array_of_integers = {1,2,3,4} - здесь нельзя получить длинну, так как работаем с указателем;
-    int array_of_integers[4] = {1,2,3,4};
-    printf("size of all array: %lu\nsize of single var %lu\n", sizeof(array_of_integers), sizeof(array_of_integers[0]));
+    // int array_of_integers[3] = {1,2,3};
+    // printf("size of all array: %lu\nsize of single var %lu\n", sizeof(array_of_integers), sizeof(array_of_integers[0]));
 
 
-    int array_len = sizeof(array_of_integers)/sizeof(array_of_integers[0]);
+    // int array_len = sizeof(array_of_integers)/sizeof(array_of_integers[0]);
 
-    print_array(array_of_integers, array_len);
+    // print_array(array_of_integers, array_len);
 
-    printf("Fifth element: %d\n", array_of_integers[4]);
-    printf("Sixth element: %d\n", array_of_integers[5]);
+    // printf("Fifth element: %d\n", array_of_integers[4]);
+    // printf("Sixth element: %d\n", array_of_integers[5]);
 
 
     // int multiple_rows_array[MULTI_ARRAY_SIZE][MULTI_ARRAY_SIZE] = {{1,2}, {3,4}};

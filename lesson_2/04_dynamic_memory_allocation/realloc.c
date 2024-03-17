@@ -6,7 +6,7 @@ int main() {
   printf("Enter size: ");
   scanf("%d", &n1);
 
-  ptr = (int*) malloc(n1 * sizeof(int));
+  ptr = (int*)malloc(n1 * sizeof(int));
 
   printf("Addresses of previously allocated memory:\n");
   for(i = 0; i < n1; ++i)
