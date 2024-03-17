@@ -6,33 +6,33 @@
 
 
 int main() { 
-    // char some_string[] = "some string";
+    char some_string[] = "some string";
 
     // char** array_of_strings[] = { - будет та же ошибка, что и с int*
-    // char* array_of_strings[STRINGS_ARRAY_LENGTH] = {
-    //     "first_string",
-    //     "second_string",
-    // };
+    char* array_of_strings[STRINGS_ARRAY_LENGTH] = {
+        "first_string",
+        "second_string",
+    };
 
-    // printf("some_string is %s with sizeof %lu and len %lu\n", some_string, sizeof(some_string), strlen(some_string));
+    printf("some_string is %s with sizeof %lu and len %lu\n", some_string, sizeof(some_string), strlen(some_string));
     
-    // int i = 0;
-    // while (some_string[i] != '\0') {
-    //     printf("some_string char for i=%d is: %c\n", i, some_string[i]);
-    //     ++i;
-    // }
+    int i = 0;
+    while (some_string[i] != '\0') {
+        printf("some_string char for i=%d is: %c\n", i, some_string[i]);
+        ++i;
+    }
 
-    // for (int j = 0; j < STRINGS_ARRAY_LENGTH; ++j) {
-    //     printf("%d element of array of strings is %s\n", j, array_of_strings[j]);
-    // }
+    for (int j = 0; j < STRINGS_ARRAY_LENGTH; ++j) {
+        printf("%d element of array of strings is %s\n", j, array_of_strings[j]);
+    }
 
-    // // scanning
+    // scanning
 
-    // char string_to_read[12];
+    char string_to_read[12];
 
-    // printf("Введите строку\n");
-    // scanf("%s", string_to_read);
-    // printf("\nstring_to_read is: %s\n", string_to_read);
+    printf("Введите строку\n");
+    scanf("%s", string_to_read);
+    printf("\nstring_to_read is: %s\n", string_to_read);
 
     char* strings_to_read[STRINGS_ARRAY_LENGTH];
 
