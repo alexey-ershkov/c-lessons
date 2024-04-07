@@ -53,6 +53,6 @@ int main() {
     std::vector<int> data_for_sort = {3, 1, 4, 1, 5, 9, 2, 6};
  
     // Сортировка диапазона вектора от начала до конца
-    std::sort(data.begin(), data.end());
+    std::sort(data_for_sort.begin(), data_for_sort.end());
     printIntVector(data_for_sort);
 }
