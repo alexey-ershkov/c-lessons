@@ -8,7 +8,10 @@ public:
 
     void print() {
         std::cout << "print" << std::endl;
+        this->virtualPrint();
     }
+
+    virtual void virtualPrint() = 0;
 };
 
 class B: public BaseClass {
@@ -20,13 +23,20 @@ public:
     void BClassPrint() {
         std::cout << "B print" << std::endl;
     }
+
+    void virtualPrint() {
+        std::cout << "Virtual print B" << std::endl;
+    } 
+};
+
+class C: public BaseClass { 
+     void virtualPrint() {
+        std::cout << "Virtual print C" << std::endl;
+    } 
 };
 
 int main() { 
-    auto b_class_instance = B();
+    auto c = B();
     
-    b_class_instance.BaseClassPrint();
-    b_class_instance.print();
-    b_class_instance.BClassPrint();
-    b_class_instance.BaseClass::print();
+    c.BaseClass::print();
 }

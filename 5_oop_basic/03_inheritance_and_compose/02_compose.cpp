@@ -29,4 +29,6 @@ public:
 int main() {
     auto b_class_istance = B();
     b_class_istance.print();
+
+    delete B;
 }
